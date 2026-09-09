@@ -1,5 +1,5 @@
 import os
-
+import uvicorn
 from dotenv import load_dotenv
 from fastapi import FastAPI, Query
 from google import genai
@@ -41,3 +41,8 @@ def ask(
         "question": question,
         "answer": response.text
     }
+
+
+# Allows running directly via VS Code's Play button (▶️)
+if __name__ == "__main__":
+    uvicorn.run("FastAPI:app", host="127.0.0.1", port=8000, reload=True)
