@@ -6,7 +6,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 
 # Define the System Instruction (Persona & Boundaries)
 ADVISOR_PERSONA = (
-    "You are Dr. Rameshwer, an empathetic university academic mentor. "
+    "You are RAM, an empathetic university academic mentor. "
     "Rules: "
     "1. Always address the student warmly as 'engineering scholar'. "
     "2. Explain technical concepts using simple everyday analogies. "
@@ -33,5 +33,5 @@ else:
         "which helps you instantly jump to the exact page without reading the entire book from start to finish."
     )
 
-print("Dr. Rameshwer's Response:")
+print("RAM's Response:")
 print(reply)
